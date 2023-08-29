@@ -21,9 +21,10 @@ export default function AllRecipes() {
 
   return (
     <>
+    <h1 className="text-center mb-10">{ingredient} recipes</h1>
     <div className="flex flex-wrap gap-y-10 justify-evenly mx-24">
      {meals && meals.map((meal)=>{
-        return <RecipeCard key={meal.id} img={meal.strMealThumb} title={meal.strMeal}/>
+        return <RecipeCard key={meal.idMeal} id={meal.idMeal} img={meal.strMealThumb} title={meal.strMeal}/>
      })}
      </div>
     </>

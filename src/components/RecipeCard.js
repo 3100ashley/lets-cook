@@ -7,7 +7,7 @@ function RecipeCard(props) {
       <Card.Img variant="top" src={props.img} />
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
-        <Button variant='dark'>Go to recipe</Button>
+        <Button variant='dark' href={'/recipe/'+props.id}>Go to recipe</Button>
       </Card.Body>
     </Card>
   );

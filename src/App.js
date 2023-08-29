@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AllRecipes from "./pages/AllRecipes";
+import Recipe from "./pages/Recipe";
 function App() {
   return (
     <BrowserRouter>
@@ -13,7 +14,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/allrecipes/:ingredient" element={<AllRecipes />} />
-          </Routes>
+            <Route path="/recipe/:recipeId" element={<Recipe/>}/>
+            </Routes>
         </div>
       </div>
     </BrowserRouter>
