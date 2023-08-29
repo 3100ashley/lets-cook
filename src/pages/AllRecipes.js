@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import Card from "../components/RecipeCard";
 import RecipeCard from "../components/RecipeCard";
 
 export default function AllRecipes() {
