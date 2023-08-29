@@ -23,7 +23,7 @@ export default function Home() {
       <h1 className='text-center mb-16'>Let's look up a meal!</h1>
       <div className="flex flex-wrap gap-y-10 justify-evenly mx-24">
      {data && data.map((meal)=>{
-        return <RecipeCard key={meal.id} img={meal.strMealThumb} title={meal.strMeal}/>
+        return <RecipeCard key={meal.idMeal} id={meal.idMeal} img={meal.strMealThumb} title={meal.strMeal}/>
      })}
      </div>
     </div>

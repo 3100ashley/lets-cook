@@ -10,11 +10,11 @@ function BasicExample() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary mb-16" data-bs-theme="dark">
       <Container className="">
-        <Navbar.Brand href="#home">Recipes</Navbar.Brand>
+        <Navbar.Brand href="/">Recipes</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
             <NavDropdown title="Mine" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">My Recipes</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
