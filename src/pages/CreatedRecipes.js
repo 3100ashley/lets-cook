@@ -62,7 +62,7 @@ export default function MyRecipes() {
 
   return (
     <>
-      <div className="flex justify-center flex-col">
+      <div className="flex justify-center flex-col place-items-center mb-10">
         <h1 className="text-center">Created Recipes</h1>
         <AddRecipe newRecipe={newRecipe} show={show} toggleShow={toggleShow} />
       </div>

@@ -11,10 +11,10 @@ export default function AddRecipe(props) {
  
 
   return (
-    <>
+    <div>
       <button
         onClick={props.toggleShow}
-        className="block m-2 bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-3 rounded"
+        className="block m-2 bg-sky-900 hover:bg-sky-700 text-white font-bold py-2 px-3 rounded"
       >
         + Add Recipe
       </button>
@@ -148,7 +148,7 @@ export default function AddRecipe(props) {
           </button>
         </Modal.Footer>
       </Modal>
-    </>
+    </div>
   );
 }
 
