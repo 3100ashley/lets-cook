@@ -4,6 +4,7 @@ Let's Cook is a web application that allows users to search recipes based on an 
 
 I designed and developed a dynamic web application using React and Python, integrating AWS DynamoDB and the MealDB API for data storage and recipe information. The application features interactive pages and a seamless user experience, with a RESTful API connecting the frontend and data sources. This project highlights my ability to adeptly combine a variety of technologies to create a highly functional and engaging web application.
 
+[Link to api](https://github.com/3100ashley/lets-cook-api)
 
 <img width="1727" alt="image" src="https://github.com/3100ashley/lets-cook/assets/60107314/db8d1d08-5d5e-449a-b212-2d9c4fbbdd8c">
 <img width="1756" alt="image" src="https://github.com/3100ashley/lets-cook/assets/60107314/20084925-d0e2-4dcf-9c91-1c75630dcf0b">
