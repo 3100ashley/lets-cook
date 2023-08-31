@@ -1,22 +1,20 @@
 import { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 
-export default function AddRecipe(props) {
-  const [name, setName] = useState("");
-  const [instructions, setInstructions] = useState("");
-  const [ingredients, setIngredients] = useState("");
-  const [image, setImage] = useState("")
+export default function EditRecipe(props) {
+
   const [show, setShow] = useState(props.show);
   const handleClose = () => setShow(false);
- 
+  const recipe = props.recipe;
+  const [tempRecipe, setTempRecipe] = useState(props.recipe)
 
   return (
     <div>
       <button
         onClick={props.toggleShow}
-        className="block m-2 bg-sky-900 hover:bg-sky-700 text-white font-bold py-2 px-3 rounded"
+        className="block bg-sky-900 hover:bg-sky-700 text-white font-bold py-2 px-3 rounded"
       >
-        + Add Recipe
+        Edit Recipe
       </button>
       <Modal
         show={props.show}
@@ -24,7 +22,7 @@ export default function AddRecipe(props) {
         backdrop="static"
         keyboard={false}
       >
-        <Modal.Header >
+        <Modal.Header>
           <Modal.Title>Add Recipe</Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -32,11 +30,7 @@ export default function AddRecipe(props) {
             onSubmit={(e) => {
               props.toggleShow();
               e.preventDefault();
-              props.newRecipe(name, ingredients, instructions, image)
-              setName('')
-              setIngredients('')
-              setInstructions('')
-              setImage('')
+              props.updateRecipe(tempRecipe)
 
             }}
             id="editmodal"
@@ -57,9 +51,9 @@ export default function AddRecipe(props) {
                   id="name"
                   type="text"
                   placeholder="Bread"
-                  value={name}
+                  defaultValue={recipe.name}
                   onChange={(e) => {
-                    setName(e.target.value);
+                    setTempRecipe({...tempRecipe, name: e.target.value});
                   }}
                 />
               </div>
@@ -79,10 +73,10 @@ export default function AddRecipe(props) {
                   id="ingredients"
                   type="text"
                   placeholder="flour,eggs,milk"
-                  value={ingredients}
+                  defaultValue={recipe.ingredients}
                   onChange={(e) => {
                     let ingredientsInput = e.target.value;
-                    setIngredients(ingredientsInput.split(','));
+                    setTempRecipe({...tempRecipe, ingredients:ingredientsInput.split(',')});
                   }}
                 />
               </div>
@@ -102,9 +96,9 @@ export default function AddRecipe(props) {
                   id="instructions"
                   type="text"
                   placeholder="Place in oven"
-                  value={instructions}
+                  defaultValue={recipe.instructions}
                   onChange={(e) => {
-                    setInstructions(e.target.value);
+                    setTempRecipe({...tempRecipe, instructions: e.target.value});
                   }}
                 />
               </div>
@@ -124,9 +118,9 @@ export default function AddRecipe(props) {
                   id="image"
                   type="text"
                   placeholder="https://www.pexels.com/photo/sliced-bread-on-gray-surface-1775043/"
-                  value={image}
+                  defaultValue={recipe.image}
                   onChange={(e) => {
-                    setImage(e.target.value);
+                    setTempRecipe({...tempRecipe, image:e.target.value});
                   }}
                 />
               </div>
@@ -144,7 +138,7 @@ export default function AddRecipe(props) {
             className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-3 rounded"
             form="editmodal"
           >
-            Add
+            Save
           </button>
         </Modal.Footer>
       </Modal>
