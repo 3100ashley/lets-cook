@@ -1,3 +1,14 @@
+<img width="1727" alt="image" src="https://github.com/3100ashley/lets-cook/assets/60107314/db8d1d08-5d5e-449a-b212-2d9c4fbbdd8c"># About Let's Cook!
+
+Let's Cook is a web application that allows users to search recipes based on an ingredient. Users can create their own recipes as well!
+
+I designed and developed a dynamic web application using React and Python, integrating AWS DynamoDB and the MealDB API for data storage and recipe information. The application features interactive pages and a seamless user experience, with a RESTful API connecting the frontend and data sources. This project highlights my ability to adeptly combine a variety of technologies to create a highly functional and engaging web application.
+
+
+![homepage]("https://github.com/3100ashley/lets-cook/assets/60107314/e6aa3bd3-d5c4-4e1b-a669-19580d07aa2c")
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +79,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
