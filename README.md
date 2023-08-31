@@ -1,12 +1,14 @@
-<img width="1727" alt="image" src="https://github.com/3100ashley/lets-cook/assets/60107314/db8d1d08-5d5e-449a-b212-2d9c4fbbdd8c"># About Let's Cook!
+# About Let's Cook!
 
 Let's Cook is a web application that allows users to search recipes based on an ingredient. Users can create their own recipes as well!
 
 I designed and developed a dynamic web application using React and Python, integrating AWS DynamoDB and the MealDB API for data storage and recipe information. The application features interactive pages and a seamless user experience, with a RESTful API connecting the frontend and data sources. This project highlights my ability to adeptly combine a variety of technologies to create a highly functional and engaging web application.
 
 
-![homepage]("https://github.com/3100ashley/lets-cook/assets/60107314/e6aa3bd3-d5c4-4e1b-a669-19580d07aa2c")
-
+<img width="1727" alt="image" src="https://github.com/3100ashley/lets-cook/assets/60107314/db8d1d08-5d5e-449a-b212-2d9c4fbbdd8c">
+<img width="1756" alt="image" src="https://github.com/3100ashley/lets-cook/assets/60107314/20084925-d0e2-4dcf-9c91-1c75630dcf0b">
+<img width="1664" alt="image" src="https://github.com/3100ashley/lets-cook/assets/60107314/5ea20f07-1424-4d53-86dd-68804b2e3ced">
+<img width="966" alt="image" src="https://github.com/3100ashley/lets-cook/assets/60107314/2f977225-258b-4760-92da-527f2dd1e9cb">
 
 
 # Getting Started with Create React App
