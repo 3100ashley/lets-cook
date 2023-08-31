@@ -24,7 +24,7 @@ export default function MyRecipes() {
     }
 
     fetchData();
-  }, [recipes]);
+  }, []);
 
 
   function newRecipe(name, ingredients, instructions, image) {
